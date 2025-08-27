@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jesus Diaz Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="fanta.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header>
+    <a href="/">Jesus Diaz</a>
+      <nav>
+        <a target="_blank" href="https://github.com/greensounds"><i class="fa-brands fa-github"></i></a>
+        <a target="_blank" href="https://www.linkedin.com/in/jeda/"><i class="fa-brands fa-linkedin"></i></a>
+      </nav>
+  </header>
+
+  <main>
+        <section>
+            <div class="intro-header">
+                <h1>Hola! I'm Jesus...</h1>
+                <p>Front End Developer</p>
+            </div>
+            <h5 class="intro-description">
+                A communicologist by qualification, and a software developer by trade. Based in Mexico, I love to
+                walk, read, and build out all sorts of fun and useful internet applications!
+            </h5>
+            <div class="links-container">
+                <i class="fa-solid link-arrow fa-arrow-right"></i>
+                <a href="mailto:jesus.goron@gmail.com">
+                    Email me
+                </a>
+                <a target="_blank" href="https://github.com/greensounds">GitHub</a>
+                <a target="_blank" href="https://www.linkedin.com/in/jeda/">LinkedIn</a>
+            </div>
+
+            <div id="play-game">
+                <button onclick="playGame()">Play game???</button>
+            </div>
+            <div style="display: none;" class="color-div">
+                <h4>Pick a color</h4>
+                <p style="display: none;">Oh no... you broke it!</p>
+                <input type="color" id="color-picker" onchange="changeColor()" value="#0084ff" />
+                <button style="display: none;" onclick="resetColor()">Reset</button>
+            </div>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Area</th>
+                        <th>Technologies</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>ReactJS | VueJs | NextJS | WordPress | Laravel</td>
+                    </tr>
+                    <tr>
+                        <td>Web</td>
+                        <td>TailwindCSS | BootStrap | Firebase | MySQL | GIT 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Design</td>
+                        <td>Photoshop | Figma </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Lastest Projects</h2>
+            <div class="cards-grid">
+                <div class="project-card">
+                    <div>
+                        <p>July, 2025</p>
+                        <h4>Brogram</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p>ReactJS</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>JavaScript</p>
+                            </div>
+                        </div>
+                        <p>The Simple 30 Workouts Training Plan.
+                        </p>
+                        <div class="project-links">
+                            <a target="_blank" href="https://brogram-plan.netlify.app">Live</a>
+                            <a target="_blank" href="https://github.com/jamezmca/2_brogram">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="img-div">
+                        <img class="big-img"
+                            src="https://github.com/jamezmca/1_web_portfolio/blob/main/public/brogram.png?raw=true"
+                            alt="smoljames-thumbnail" />
+                    </div>
+                </div>
+
+
+                <div class="project-card">
+                    <div>
+                        <p>July, 2025</p>
+                        <h4>Smolstore</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p>NextJS</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>Stripe</p>
+                            </div>
+                        </div>
+                        <p>A super cool store for programmers and productivity fiends!
+                        </p>
+                        <div class="project-links">
+                            <a target="_blank" href="https://main.d2a4evir1uyly1.amplifyapp.com/">Live</a>
+                            <a target="_blank" href="https://github.com/jamezmca/3_smolstore">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="img-div">
+                        <img class="big-img"
+                            src="https://github.com/jamezmca/1_web_portfolio/blob/main/public/smolstore.png?raw=true"
+                            alt="smoljames-thumbnail" />
+                    </div>
+                </div>
+
+
+                <div class="project-card">
+                    <div>
+                        <p>July, 2025</p>
+                        <h4>Expenny | The Subscription Tracker</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p>NextJS</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>Firebase</p>
+                            </div>
+                        </div>
+                        <p>Track all your subscription analytics!
+                        </p>
+                        <div class="project-links">
+                            <a target="_blank" href="https://sub-tracker.netlify.app/">Live</a>
+                            <a target="_blank" href="https://github.com/jamezmca/4_expenny">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="img-div">
+                        <img class="big-img"
+                            src="https://github.com/jamezmca/1_web_portfolio/blob/main/public/expenny.png?raw=true"
+                            alt="smoljames-thumbnail" />
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>By <a href="https://www.linkedin.com/in/jeda/" target="_blank">Jesus Diaz</a> ⭐️</p>
+    </footer>
+    <script>
+        const body = document.querySelector('body')
+        const colorInput = document.getElementById('color-picker')
+        const colorDiv = document.querySelector('.color-div')
+        const hiddenText = document.querySelector('.color-div p')
+        const resetBtn = document.querySelector('.color-div button')
+        const playBtn = document.getElementById('play-game')
+
+        function playGame() {
+            colorDiv.style.display = 'block'
+            playBtn.style.display = 'none'
+        }
+
+        function changeColor() {
+            const selectedColor = colorInput.value
+            body.style.background = selectedColor
+            resetBtn.style.display = 'block'
+            hiddenText.style.display = 'block'
+            colorInput.style.display = 'none'
+        }
+
+        function resetColor() {
+            body.style.background = 'white'
+            colorInput.style.display = 'block'
+            playBtn.style.display = 'block'
+
+            hiddenText.style.display = 'none'
+            resetBtn.style.display = 'none'
+            colorDiv.style.display = 'none'
+        }
+    </script>
+</body>
+</html>
